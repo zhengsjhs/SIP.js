@@ -16,7 +16,7 @@ var MediaStreamManager = function MediaStreamManager (logger, defaultMediaHint) 
   }
 
   this.mediaHint = defaultMediaHint || {
-    constraints: {audio: true, video: true}
+    constraints: {audio: true, video: false}
   };
 
   // map of streams to acquisition manner:

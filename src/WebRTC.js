@@ -17,11 +17,11 @@ WebRTC.isSupported = function () {
   if (_isSupported !== undefined) {
     return _isSupported;
   }
-
-  WebRTC.MediaStream = environment.MediaStream;
-  WebRTC.getUserMedia = environment.getUserMedia;
-  WebRTC.RTCPeerConnection = environment.RTCPeerConnection;
-  WebRTC.RTCSessionDescription = environment.RTCSessionDescription;
+/*
+  WebRTC.MediaStream = RTCMediaStream;
+  WebRTC.getUserMedia = getUserMedia;
+  WebRTC.RTCPeerConnection = RTCPeerConnection;
+  WebRTC.RTCSessionDescription = RTCSessionDescription;
 
   if (WebRTC.RTCPeerConnection && WebRTC.RTCSessionDescription) {
     if (WebRTC.getUserMedia) {
@@ -31,7 +31,8 @@ WebRTC.isSupported = function () {
   }
   else {
     _isSupported = false;
-  }
+  }*/
+  _isSupported = true;
   return _isSupported;
 };
 

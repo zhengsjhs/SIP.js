@@ -1,5 +1,5 @@
 "use strict";
-var NodeEventEmitter = require('events').EventEmitter;
+var NodeEventEmitter = require('./events').EventEmitter;
 
 module.exports = function (console) {
 
